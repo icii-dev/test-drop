@@ -1,0 +1,17 @@
+.input-div{
+    height: 50px;
+    border-radius: 10px;
+
+    background-color: #242636;
+
+    input{
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        color: var(--text-color);
+        font-size: 20px;
+    }
+}

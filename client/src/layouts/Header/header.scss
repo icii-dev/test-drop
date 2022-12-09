@@ -1,0 +1,32 @@
+.header {
+    height: 100px;
+    width: 100%;
+    max-width: 1440px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 20px 20px;
+
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+
+    .title{
+        font-family: 'Changa', sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        margin-left: 20px;
+
+        color: var(--primary-color);
+    }
+
+    .menu-div{
+        a{
+            color: var(--text-color);
+        }
+    }
+}
