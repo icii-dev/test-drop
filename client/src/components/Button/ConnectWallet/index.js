@@ -5,11 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addWallet } from '../../../redux/action';
 
 const ConnectWallet = () => {
-    const [connected, setConnected] = useState(false);
+    const [connected, setConnected] = useState();
 
     const walletAddr = useSelector((state) => state.addr);
     const dispatch = useDispatch();
 
+    // const chainId = 324 // zksync mainnet
     const chainId = 280; // zksync testnet
     const provider = new ethers.providers.Web3Provider(window.ethereum);
 

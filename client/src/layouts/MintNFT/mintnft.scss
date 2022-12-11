@@ -1,9 +1,14 @@
+*{
+    user-select: auto !important;
+}
+
 .mint-nft{
     // height: 600px;
     max-width: 1024px;
     width: 100%;
 
     display: flex;
+    flex-direction: column;
     gap: 30px;
 
     border-radius: 30px;
@@ -15,18 +20,43 @@
         width: 50%;
     }
 
-    .left{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    .big-text {
+        font-size: 3em;
     }
 
-    .right{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    .title{
+        color: white;
+        text-align: center;
     }
+
+    .information {
+        color: white;
+    }
+
+    .bottom{
+        display: flex;
+        gap: 30px;
+
+        .left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .component {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    }
+
 
 }
